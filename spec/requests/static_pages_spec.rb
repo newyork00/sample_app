@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "Static pages" do
 
   before(:each) do
-    @base_title = "Ruby on Rals Tutorial Sample App"
+    @base_title = "Ruby on Rails Tutorial Sample App"
   end
 
   describe "Home page" do
