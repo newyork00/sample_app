@@ -1,5 +1,26 @@
 <% provide(:title, @user.name) %>
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name + "<script>" %>
-</h1>
+
+<%= stylesheet_link_tag 'users', media: 'screen' %>
+
+<table class="profile" summary="Profile Information">
+
+  <tr>
+    <td class="main">
+
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+
+    </td>
+
+    <td>
+      <td class="sidebar round">
+        <strong>Name</strong> <%= @user.name %><br />
+        <strong>URL</strong> <%= link_to user_path(@user), @user %>
+
+    </td>
+  </tr>
+
+</table>
+
