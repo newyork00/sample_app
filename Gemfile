@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.0'
+gem 'gravatar_image_tag'
 
 group :development do
   gem 'sqlite3', '1.3.5'
@@ -30,6 +31,7 @@ group :test do
   # Others
   gem 'guard-spork', '0.3.2'
   gem 'spork', '~> 0.9.0.rc'
+  gem 'factory_girl_rails', '1.0'
 end
 
 group :production do
